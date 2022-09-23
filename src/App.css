@@ -1,0 +1,98 @@
+.header {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.header__logo {
+  height: 75px;
+  width: 75px;
+  animation: rotate 10s linear infinite;
+}
+
+.header__title {
+  color: white;
+}
+
+.todo {
+  margin-top: 50px;
+}
+
+.todo__form {
+  display: flex;
+  align-items: center;
+}
+
+.todo__input {
+  flex-grow: 1;
+  margin-right: 25px;
+  border: none;
+  outline: none;
+  background: none;
+  border-bottom: 1px white solid;
+  padding: 5px 10px;
+  color: white;
+  font-size: 18px;
+}
+
+.todo__button {
+  border: none;
+  outline: none;
+  padding: 5px 25px;
+  font-size: 18px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.todo__list {
+  margin-top: 50px;
+}
+
+.todo__task {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.todo__text {
+  color: white;
+  font-size: 18px;
+  flex-grow: 1;
+}
+
+.todo__text.finished{
+  text-decoration: line-through;
+}
+
+.todo__num{
+  font-size: 18px;
+  font-weight: bold;
+  margin-right: 15px;
+  color: white;
+}
+
+.todo__check{
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.todo__delete{
+  border: none;
+  outline: none;
+  padding: 5px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px;
+}
